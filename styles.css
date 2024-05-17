@@ -1,0 +1,445 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+
+    font-family: Helvetica;
+    
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+}
+
+.heading{
+    border-bottom: 1px solid black ;
+    
+}
+
+
+.logo{
+    width: 100%;
+    height: 50vh;
+    margin-top: 45px;
+    padding: 15px;
+    
+}
+
+nav {
+    height: 7vh;
+    width: 100%;
+    padding: 5px 20px;
+    position: fixed;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    background-color: white;
+    padding-top: 14px;
+    z-index: 200;
+    
+}
+nav img{
+    height: 40px;
+    position: absolute;
+    bottom: 6px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+nav span{
+    position: absolute;
+    right: 0;
+    
+}
+
+nav span i {
+    margin-right: 20px;
+    top: 30%;
+    
+}
+
+nav i {
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+.list{
+    
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 58vh;
+}
+.list h2{ 
+    text-align: center;
+    padding: 0px;
+    font-size: 114px;
+    margin: 20px;
+    line-height: 90%;
+    font-weight: 600;
+    letter-spacing: 2%;
+}
+
+.highlight:hover{
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+
+.flowing-heading{
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid black;
+
+    background-color: #FF39A4;
+}
+.flowing-text{
+    font-size: 42px;
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: 100;
+}
+.flowing-text:hover{
+    color:white;
+    cursor: pointer;
+}
+
+
+marquee{
+    
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+}
+
+.flowing-heading:hover .marquee {
+    animation-play-state: paused;
+}
+
+.video-play{
+    width: 100%;
+    height: auto;
+    
+}
+
+video{
+    width: 100%;
+    padding-bottom: 1px;
+    border-bottom: 1px solid black;
+}
+
+.small-head{
+    width: 100%;
+    height: 8vh;
+    border-bottom: 1px solid black;
+  
+}
+
+.small-head p{
+    font-size: 25px;
+    font-weight: 100;
+    padding: 20px;
+    font-style: italic;
+}
+
+.subinfo{
+    padding: 20px;
+    width: 100%;
+    height: 40vh;
+    
+    
+}
+
+.subinfo h1{
+    font-size: 70px;
+    font-weight: 200;
+    margin-bottom: 20px;
+    line-height: 90%;
+}
+.subinfo a{
+    font-size: 70px;
+    font-weight: 500;
+    color: black;
+}
+.subinfo a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+.space{
+    height: 15vh;
+    width: 100%;
+    background-color:white;
+    border-bottom: 1px solid black;
+}
+
+.table-container{
+    width: 100%;
+    height: 14vh;
+    margin-top: 20px;
+    position: relative;
+    border-bottom: 1px solid black;
+    
+    
+}
+.head-table{
+    padding-bottom: 10px;
+}
+
+.head-table p{
+    position: absolute;
+    top: 70%;
+    transform: translateY(-30%);
+    right: 1%;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 0.6em;
+
+}
+
+.head-table h1{
+    position: absolute;
+    left: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-size: 80px;
+    font-weight: 300;
+
+}
+
+/* TABLE */
+
+.container-table {
+    position: relative;
+}
+table{
+    width: 100%;
+    
+}
+th, td{
+    padding: 9px 16px;
+    border-bottom: 1px solid black;
+    font-size: 18px;
+    font-weight: 400;
+    
+}
+th{
+    text-align: left;
+    text-decoration: none;
+    
+}
+.left{
+    text-align: right;
+}
+.center{
+    text-align: center;
+}
+#blue{
+    color: blue;
+}
+/* HOVER TABLE ITEM */
+
+.container-table-type {
+    position: relative;
+}
+
+.new-card {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 300px;
+    max-height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease;
+}
+
+.drill:hover + .new-card {
+    display: block;
+}
+
+.new-card img {
+    position: relative;
+    left: -50%;
+    top: -50%;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+        
+}
+
+  /* Column styles */
+.column {
+    position: relative;
+    overflow: hidden;
+    border-bottom: 0.1px solid black;
+    border-right: 0.1px solid black;
+     
+}
+
+  /* Image styles */
+.column img {
+    width: 100%;
+    height: auto;
+    display: block;
+} 
+
+.sliding{
+    border-bottom: 1px solid black;
+    overflow: hidden;
+}
+.sliding h1{
+    font-size: 130px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#h2-heading{
+    width: 100%;
+    height: 24vh;
+    border-bottom: 1px solid black;
+
+}
+#h2-heading h2{
+    font-size: 68px;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.threeimage{
+    width: 100%;
+    height: 490px;
+    padding: 0px;
+    margin: 0;
+    display: flex;
+
+    margin-bottom: 30px;
+}
+
+
+
+.threeimage img{
+    width: 90%;
+    height: 100%;
+    display: inline-block;
+    margin-left: 32px;
+    
+}
+
+.pic{
+    border: 1px solid black;
+    width: 100%;
+}
+
+
+
+.pink-head{
+    width: 100%;
+    height: 15vh;
+    margin-top: 20px;
+    position: relative;
+    padding-top: 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: #FF39A4;
+}
+
+
+.pink-sub h1{
+    position: absolute;
+    left: 1%;
+    font-size: 80px;
+    font-weight: 300;
+}
+
+.pink-sub p{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1%;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 0.6em;
+}
+
+#email{
+    right: 12%;
+}
+#email:hover{
+    color: white;
+}
+#subs:hover{
+    color: white;
+}
+
+.footer-container{
+    width: 100%;
+    height: 36vh;
+    margin-top: 20px;
+    display: flex;
+    
+    border-bottom: 1px solid black ;
+}
+
+.logo-left{
+    width: 33%;
+    height: 100%;
+    
+}
+.logo-left img{
+    width: 120px;
+    height: auto;
+    padding-left: 20px;
+    
+}
+.center-info   {
+    width: 33%;
+}
+
+.center-info li{
+    list-style-type: none;
+    padding: 2px  10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.center-info li:hover{
+    color: blue;
+}
+
+.info-add{
+    width: 33%;
+    
+}
+
+.footer-sub-heading{
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+.extra{
+    margin-bottom: 140px;
+}
+
+.footer-p {
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.footer-p:hover{
+    color: blue;
+}
+.footer-space{
+    width: 100%;
+    height: 8vh;
+    padding: 20px;
+}
